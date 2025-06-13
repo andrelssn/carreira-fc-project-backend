@@ -11,20 +11,22 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('teams', function (Blueprint $table) {
+        Schema::create('achievements', function (Blueprint $table) {
             $table
                 ->id();
             $table
+                ->unsignedBigInteger('id_team')
+                ->nullable(false);
+            $table
                 ->string('name')
-                ->nullable(false);
+                ->nullable(true);
             $table
-                ->string('city')
-                ->nullable(false);
+                ->integer('quantity')
+                ->nullable(true);
             $table
-                ->string('league')
-                ->nullable(false);
-            $table
-                ->enum('difficulty', [1, 2, 3, 4, 5])
+                ->foreign('id_team')
+                ->references('id')
+                ->on('teams')
                 ->nullable(false);
         });
     }
@@ -34,6 +36,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::drop('teams');
+        Schema::drop('achievements');
     }
 };
