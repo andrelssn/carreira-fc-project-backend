@@ -30,13 +30,13 @@ class leagues extends Seeder
                     'name' => 'EFL League One',
                     'country' => 'England',
                     'division' => 3,
-                    'difficulty' => 3,
+                    'difficulty' => 2,
                 ],
                 [
                     'name' => 'EFL League Two',
                     'country' => 'England',
                     'division' => 4,
-                    'difficulty' => 2,
+                    'difficulty' => 1,
                 ],
                 [
                     'name' => 'LaLiga EA SPORTS',
@@ -133,6 +133,24 @@ class leagues extends Seeder
                     'country' => 'Turkey',
                     'division' => 1,
                     'difficulty' => 4,
+                ],
+                [
+                    'name' => 'Brasileirão Série A',
+                    'country' => 'Brazil',
+                    'division' => 1,
+                    'difficulty' => 4,
+                ],
+                [
+                    'name' => 'Brasileirão Série B',
+                    'country' => 'Brazil',
+                    'division' => 1,
+                    'difficulty' => 3,
+                ],
+                [
+                    'name' => 'Brasileirão Série C',
+                    'country' => 'Brazil',
+                    'division' => 1,
+                    'difficulty' => 2,
                 ],
             ]
         );
