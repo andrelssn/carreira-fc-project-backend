@@ -24,6 +24,9 @@ return new class extends Migration
                 ->string('country')
                 ->nullable(false);
             $table
+                ->string('stadium')
+                ->nullable(false);
+            $table
                 ->unsignedBigInteger('id_league');
             $table
                 ->enum('size', [1, 2, 3, 4, 5])
