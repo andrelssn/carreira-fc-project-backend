@@ -18,7 +18,7 @@ return new class extends Migration
                 ->unsignedBigInteger('id_team')
                 ->nullable(false);
             $table
-                ->string('history')
+                ->string('history', 1000)
                 ->nullable(false);
             $table
                 ->timestamp('foundation')
