@@ -11,7 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('to_win', function (Blueprint $table) {
+            $table
+                ->id();
+            $table
+                ->unsignedBigInteger('id_team')
+                ->nullable(false);
+            $table
+                ->string('name')
+                ->nullable(true);
+            $table
+                ->foreign('id_team')
+                ->references('id')
+                ->on('teams')
+                ->nullable(false);
+        });
     }
 
     /**
@@ -19,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::drop('to_win');
     }
 };

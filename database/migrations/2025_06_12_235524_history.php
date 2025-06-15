@@ -21,7 +21,7 @@ return new class extends Migration
                 ->string('history', 1000)
                 ->nullable(false);
             $table
-                ->timestamp('foundation')
+                ->string('foundation')
                 ->nullable(false);
             $table
                 ->string('stadium')
@@ -30,7 +30,7 @@ return new class extends Migration
                 ->string('goalscorer')
                 ->nullable(false);
             $table
-                ->string('goalscorer_total')
+                ->integer('goalscorer_total')
                 ->nullable(false);
 
             // FK
