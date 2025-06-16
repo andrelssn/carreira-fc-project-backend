@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Teams extends Model
+class Biographs extends Model
 {
     use HasFactory;
 
@@ -15,13 +15,12 @@ class Teams extends Model
      * @var list<string>
      */
     protected $fillable = [
-        'id',
-        'name',
-        'city',
-        'country',
+        'id_team',
+        'history',
+        'foundation',
         'stadium',
-        'id_league',
-        'size'
+        'goalscorer',
+        'goalscorer_total'
     ];
 
     /**
@@ -30,5 +29,6 @@ class Teams extends Model
      * @var list<string>
      */
     protected $hidden = [
+        'id',
     ];
 }
