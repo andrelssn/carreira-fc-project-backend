@@ -2,9 +2,7 @@
 
 namespace App\Http\Resources;
 
-use App\Models\Logos;
-use App\Repositories\Teams\TeamsRepository;
-use App\Services\Api\Teams\TeamsService;
+use App\Repositories\Biograph\BiographRepository;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -17,13 +15,20 @@ class TeamsResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
+        $biographRepository = new BiographRepository;
+        $biograph = $biographRepository->getWhere($this->id);
+
         return [
-            "Id"        => $this->id,
-            "Name"      => $this->name,
-            "City"      => $this->city,
-            "Country"   => $this->country,
-            "Stadium"   => $this->stadium,
-            "Size"      => $this->size,
+            "Id"               => $this->id,
+            "Name"             => $this->name,
+            "City"             => $this->city,
+            "Country"          => $this->country,
+            "Stadium"          => $this->stadium,
+            "Size"             => $this->size,
+            "History"          => $biograph[0]->history,
+            "Foundation"       => $biograph[0]->foundation,
+            "Goalscorer"       => $biograph[0]->goalscorer,
+            "Goalscorer_Total" => $biograph[0]->goalscorer_total,
         ];
     }
 }
