@@ -2,18 +2,17 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class towin extends Seeder
+class towins extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('to_win')->insert([
+        DB::table('to_wins')->insert([
             ['id_team' => 1, 'name' => 'UEFA Champions League'],
             ['id_team' => 1, 'name' => 'UEFA Europa League'], // Although they reached the final, they have never won it.
             ['id_team' => 1, 'name' => 'UEFA Super Cup'],

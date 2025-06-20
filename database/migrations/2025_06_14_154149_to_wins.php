@@ -6,34 +6,20 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-   /**
+    /**
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('history', function (Blueprint $table) {
+        Schema::create('to_wins', function (Blueprint $table) {
             $table
                 ->id();
             $table
                 ->unsignedBigInteger('id_team')
                 ->nullable(false);
             $table
-                ->string('history', 1000)
-                ->nullable(false);
-            $table
-                ->string('foundation')
-                ->nullable(false);
-            $table
-                ->string('stadium')
-                ->nullable(false);
-            $table
-                ->string('goalscorer')
-                ->nullable(false);
-            $table
-                ->integer('goalscorer_total')
-                ->nullable(false);
-
-            // FK
+                ->string('name')
+                ->nullable(true);
             $table
                 ->foreign('id_team')
                 ->references('id')
@@ -47,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::drop('history');
+        Schema::drop('to_wins');
     }
 };
