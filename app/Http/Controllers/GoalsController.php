@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Services\Api\Teams\TeamsService;
-use App\Models\Teams;
+use App\Models\Goals;
+use App\Services\Api\Goals\GoalsService;
 use Illuminate\Http\Request;
 
-class TeamsController extends Controller
+class GoalsController extends Controller
 {
-    private $teamsService;
+    private $goalsService;
 
-    public function __construct(TeamsService $teamsService)
+    public function __construct(GoalsService $goalsService)
     {
-        $this->teamsService = $teamsService;
+        $this->goalsService = $goalsService;
     }
 
     /**
@@ -21,7 +21,7 @@ class TeamsController extends Controller
      */
     public function index()
     {
-        return Teams::get();
+        return Goals::get();
     }
 
     /**
@@ -29,12 +29,12 @@ class TeamsController extends Controller
      */
     public function list(Request $request)
     {
-        $teams = $this->teamsService->getList($request);
+        $goals = $this->goalsService->getGoals($request);
 
-        if (!isset($teams)) {
+        if (!isset($goals)) {
             return 'error';
         }
 
-        return $teams;
+        return $goals;
     }
 }

@@ -1,8 +1,13 @@
 <?php
 
+use App\Http\Controllers\AchievementsController;
 use App\Http\Controllers\BiographController;
+use App\Http\Controllers\DetailsController;
+use App\Http\Controllers\GoalsController;
 use App\Http\Controllers\LeaguesController;
+use App\Http\Controllers\RecordsController;
 use App\Http\Controllers\TeamsController;
+use App\Http\Controllers\ToWinController;
 use App\Models\Logos;
 use Illuminate\Support\Facades\Route;
 
@@ -29,4 +34,42 @@ Route::prefix('history')->group(function () {
         Route::get('{id}', 'show');
     });
 });
+
+Route::prefix('details')->group(function () {
+    Route::prefix('goals')->group(function () {
+        Route::controller(GoalsController::class)->group(function () {
+            Route::get('', 'index');
+            Route::get('{id}', 'list');
+        });
+    });
+
+    Route::prefix('achievements')->group(function () {
+        Route::controller(AchievementsController::class)->group(function () {
+            Route::get('', 'index');
+            Route::get('{id}', 'list');
+        });
+    });
+
+    Route::prefix('records')->group(function () {
+        Route::controller(RecordsController::class)->group(function () {
+            Route::get('', 'index');
+            Route::get('{id}', 'list');
+        });
+    });
+
+    Route::prefix('towin')->group(function () {
+        Route::controller(ToWinController::class)->group(function () {
+            Route::get('', 'index');
+            Route::get('{id}', 'list');
+        });
+    });
+
+    Route::controller(DetailsController::class)->group(function () {
+        Route::get('{id}', 'list');
+    });
+});
+
+
+
+
 

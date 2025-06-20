@@ -5,14 +5,14 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class history extends Seeder
+class biographs extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('history')->insert([
+        DB::table('biographs')->insert([
             [
                 'id_team' => 1,
                 'history' => 'Arsenal Football Club, founded in 1886 as Dial Square, is one of England\'s most successful and storied football clubs. They moved to North London in 1913, establishing themselves at Highbury for 93 years before moving to the Emirates Stadium in 2006. The club holds the record for the longest unbeaten run in English top-flight history, achieving the "Invincibles" season in 2003-04 by winning the Premier League without a single defeat. Arsenal has won 13 League titles, a record 14 FA Cups, 2 League Cups, 16 FA Community Shields, and one European Cup Winners\' Cup. Known for their attractive, flowing football and strong rivalries, particularly with Tottenham Hotspur in the North London Derby, Arsenal has a rich tradition of developing young talent and playing an influential role in English football. The club continually strives for excellence, aiming to add more silverware to its illustrious collection while maintaining its strong community ties and global fanbase.',

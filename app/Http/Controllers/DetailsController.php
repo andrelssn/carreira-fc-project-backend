@@ -3,17 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Services\Api\Teams\TeamsService;
-use App\Models\Teams;
+use App\Services\Api\Details\DetailsService;
 use Illuminate\Http\Request;
 
-class TeamsController extends Controller
+class DetailsController extends Controller
 {
-    private $teamsService;
+    private $detailsService;
 
-    public function __construct(TeamsService $teamsService)
+    public function __construct(DetailsService $detailsService)
     {
-        $this->teamsService = $teamsService;
+        $this->detailsService = $detailsService;
     }
 
     /**
@@ -21,7 +20,6 @@ class TeamsController extends Controller
      */
     public function index()
     {
-        return Teams::get();
     }
 
     /**
@@ -29,12 +27,12 @@ class TeamsController extends Controller
      */
     public function list(Request $request)
     {
-        $teams = $this->teamsService->getList($request);
+        $details = $this->detailsService->getDetails($request);
 
-        if (!isset($teams)) {
+        if (!isset($details)) {
             return 'error';
         }
 
-        return $teams;
+        return $details;
     }
 }
