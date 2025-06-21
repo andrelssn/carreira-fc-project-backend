@@ -7,7 +7,6 @@ use App\Repositories\Goals\GoalsRepository;
 use App\Repositories\Records\RecordsRepository;
 use App\Repositories\ToWin\ToWinRepository;
 use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
 
 class DetailsService
 {
