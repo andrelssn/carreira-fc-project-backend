@@ -6,9 +6,11 @@ use App\Http\Controllers\DetailsController;
 use App\Http\Controllers\GoalsController;
 use App\Http\Controllers\LeaguesController;
 use App\Http\Controllers\RecordsController;
+use App\Http\Controllers\SponsorsController;
 use App\Http\Controllers\TeamsController;
 use App\Http\Controllers\ToWinController;
 use App\Models\Logos;
+use App\Models\LogosSponsors;
 use Illuminate\Support\Facades\Route;
 
 
@@ -69,7 +71,15 @@ Route::prefix('details')->group(function () {
     });
 });
 
+Route::prefix('sponsors')->group(function () {
+    Route::controller(SponsorsController::class)->group(function () {
+        Route::get('', 'show');
+    });
 
+    Route::get('/logo/{id_sponsor}', function ($id_sponsor) {
+        $img = LogosSponsors::where('id_sponsor', $id_sponsor)->firstOrFail();
 
-
-
+        return response($img->img)
+            ->header('Content-Type', 'image/png');
+    });
+});
