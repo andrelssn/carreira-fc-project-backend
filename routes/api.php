@@ -11,6 +11,7 @@ use App\Http\Controllers\TeamsController;
 use App\Http\Controllers\ToWinController;
 use App\Models\Logos;
 use App\Models\LogosSponsors;
+use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Route;
 
 
@@ -77,7 +78,11 @@ Route::prefix('sponsors')->group(function () {
     });
 
     Route::get('/logo/{id_sponsor}', function ($id_sponsor) {
-        $img = LogosSponsors::where('id_sponsor', $id_sponsor)->firstOrFail();
+        $img = LogosSponsors::where('id_sponsor', $id_sponsor)->first();
+
+        if (!$img) {
+            return Response('without logo', 204);
+        }
 
         return response($img->img)
             ->header('Content-Type', 'image/png');
