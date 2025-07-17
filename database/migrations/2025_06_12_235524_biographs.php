@@ -18,7 +18,10 @@ return new class extends Migration
                 ->unsignedBigInteger('id_team')
                 ->nullable(false);
             $table
-                ->string('history', 1000)
+                ->string('history', 2000)
+                ->nullable(false);
+            $table
+                ->string('history_ptbr', 2000)
                 ->nullable(false);
             $table
                 ->string('foundation')
@@ -37,7 +40,7 @@ return new class extends Migration
             $table
                 ->foreign('id_team')
                 ->references('id')
-                ->on('teams')
+                ->on('teams_fc25')
                 ->nullable(false);
         });
     }
