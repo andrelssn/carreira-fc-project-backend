@@ -13,13 +13,14 @@ class biographs extends Seeder
     public function run(): void
     {
         DB::table('biographs')->insert([
-            [
+           [
                 'id_team' => 1,
                 'history' => 'Arsenal Football Club, founded in 1886 as Dial Square, is one of England\'s most successful and storied football clubs. They moved to North London in 1913, establishing themselves at Highbury for 93 years before moving to the Emirates Stadium in 2006. The club holds the record for the longest unbeaten run in English top-flight history, achieving the "Invincibles" season in 2003-04 by winning the Premier League without a single defeat. Arsenal has won 13 League titles, a record 14 FA Cups, 2 League Cups, 16 FA Community Shields, and one European Cup Winners\' Cup. Known for their attractive, flowing football and strong rivalries, particularly with Tottenham Hotspur in the North London Derby, Arsenal has a rich tradition of developing young talent and playing an influential role in English football. The club continually strives for excellence, aiming to add more silverware to its illustrious collection while maintaining its strong community ties and global fanbase.',
                 'foundation' => '1886',
                 'stadium' => 'Emirates Stadium',
                 'goalscorer' => 'Thierry Henry',
-                'goalscorer_total' => 228
+                'goalscorer_total' => 228,
+                'history_ptbr' => 'O Arsenal Football Club, fundado em 1886 como Dial Square, é um dos clubes de futebol mais bem-sucedidos e históricos da Inglaterra. Eles se mudaram para o Norte de Londres em 1913, estabelecendo-se em Highbury por 93 anos antes de se mudarem para o Emirates Stadium em 2006. O clube detém o recorde de maior sequência invicta na história da primeira divisão inglesa, alcançando a temporada dos "Invencíveis" em 2003-04 ao vencer a Premier League sem uma única derrota. O Arsenal conquistou 13 títulos da Liga, um recorde de 14 FA Cups, 2 Copas da Liga, 16 FA Community Shields e uma Recopa Europeia. Conhecido por seu futebol atraente e fluente e por fortes rivalidades, particularmente com o Tottenham Hotspur no North London Derby, o Arsenal tem uma rica tradição de desenvolver jovens talentos e desempenhar um papel influente no futebol inglês. O clube continuamente busca a excelência, visando adicionar mais troféus à sua ilustre coleção, mantendo seus fortes laços comunitários e sua base de fãs global.'
             ],
             [
                 'id_team' => 2,
@@ -27,7 +28,8 @@ class biographs extends Seeder
                 'foundation' => '1874',
                 'stadium' => 'Villa Park',
                 'goalscorer' => 'Billy Walker',
-                'goalscorer_total' => 244
+                'goalscorer_total' => 244,
+                'history_ptbr' => 'O Aston Villa Football Club, fundado em março de 1874 em Birmingham, é um dos clubes mais antigos e bem-sucedidos da história do futebol inglês. Foi um dos doze membros fundadores da Football League em 1888. O Villa tem uma rica história, tendo vencido o título da Primeira Divisão sete vezes e a FA Cup sete vezes. Seu maior triunfo veio em 1982, quando levantou a Copa dos Campeões, derrotando o Bayern de Munique na final. Após períodos de fortunas variadas, o clube se restabeleceu na Premier League, com uma base de fãs dedicada e planos ambiciosos para o sucesso futuro, visando retornar ao auge do futebol inglês e europeu a partir de seu icônico estádio Villa Park.'
             ],
             [
                 'id_team' => 3,
@@ -35,7 +37,8 @@ class biographs extends Seeder
                 'foundation' => '1899',
                 'stadium' => 'Vitality Stadium (Dean Court)',
                 'goalscorer' => 'Brett Pitman',
-                'goalscorer_total' => 102 // Official league goals, though total might be higher with cups
+                'goalscorer_total' => 102, // Official league goals, though total might be higher with cups
+                'history_ptbr' => 'O AFC Bournemouth, fundado em 1899 como Boscombe, tornou-se Bournemouth & Boscombe Athletic em 1923, adotando seu nome atual em 1972. O clube passou por altos e baixos significativos, incluindo períodos nas divisões inferiores e dificuldades financeiras. Sua ascensão meteórica sob Eddie Howe os viu subir da League Two para a Premier League em apenas seis temporadas, alcançando o status de primeira divisão pela primeira vez em sua história em 2015. Conhecidos por seu estilo de jogo ofensivo, os Cherries se estabeleceram desde então na Premier League, demonstrando resiliência e ambição em sua casa no Vitality Stadium (Dean Court), um testemunho de sua notável jornada no futebol inglês.'
             ],
             [
                 'id_team' => 4,
@@ -43,7 +46,8 @@ class biographs extends Seeder
                 'foundation' => '1889',
                 'stadium' => 'Gtech Community Stadium',
                 'goalscorer' => 'Jim Towers',
-                'goalscorer_total' => 163
+                'goalscorer_total' => 163,
+                'history_ptbr' => 'O Brentford Football Club, fundado em 1889, tem uma história longa e variada, em grande parte passada nas divisões inferiores do futebol inglês. Conhecido como "The Bees", o clube teve períodos de sucesso, incluindo uma forte campanha na década de 1930, quando alcançou sua melhor colocação na liga. Após décadas fora da primeira divisão, o Brentford conquistou a promoção para a Premier League em 2021, marcando um marco significativo em sua história. O clube é conhecido por sua abordagem inovadora e baseada em dados para recrutamento e gestão, que sustentou seu sucesso recente. Eles jogam suas partidas em casa no Brentford Community Stadium, tendo se mudado de seu histórico Griffin Park em 2020.'
             ],
             [
                 'id_team' => 5,
@@ -51,7 +55,8 @@ class biographs extends Seeder
                 'foundation' => '1901',
                 'stadium' => 'Falmer Stadium (Amex Stadium)',
                 'goalscorer' => 'Tommy Cook',
-                'goalscorer_total' => 123
+                'goalscorer_total' => 123,
+                'history_ptbr' => 'O Brighton & Hove Albion Football Club, fundado em 1901, é conhecido como "The Seagulls". O clube passou grande parte de sua história nas divisões inferiores, com um período notável na Primeira Divisão no início dos anos 1980, chegando à final da FA Cup em 1983. Após graves dificuldades financeiras e problemas de sede no final dos anos 1990, o clube experimentou um ressurgimento notável. Sua promoção para a Premier League em 2017 marcou uma nova era, estabelecendo-os como um time resiliente da primeira divisão, conhecido por seu futebol atraente e ofensivo e por uma contratação astuta de jogadores. Eles jogam suas partidas em casa no Falmer Stadium, também conhecido como Amex Stadium, um local moderno e simbólico de seu crescimento recente.'
             ],
             [
                 'id_team' => 6,
@@ -59,7 +64,8 @@ class biographs extends Seeder
                 'foundation' => '1905',
                 'stadium' => 'Stamford Bridge',
                 'goalscorer' => 'Frank Lampard',
-                'goalscorer_total' => 211
+                'goalscorer_total' => 211,
+                'history_ptbr' => 'O Chelsea Football Club, fundado em 1905, rapidamente se tornou um clube proeminente de Londres, embora seus maiores sucessos tenham ocorrido principalmente a partir de meados da década de 1990. Localizado em Stamford Bridge, o Chelsea conquistou inúmeros títulos nacionais e internacionais, incluindo seis títulos da Premier League, oito FA Cups, cinco Copas da Liga e, notavelmente, dois títulos da UEFA Champions League (2012 e 2021) e dois títulos da UEFA Europa League. O clube passou por uma transformação significativa após a aquisição por Roman Abramovich em 2003, inaugurando uma era de sucesso sem precedentes e reconhecimento global. Conhecido por sua apaixonada torcida e momentos dramáticos, o Chelsea continua sendo uma potência no futebol inglês e europeu, buscando continuamente por troféus.'
             ],
             [
                 'id_team' => 7,
@@ -67,7 +73,8 @@ class biographs extends Seeder
                 'foundation' => '1905',
                 'stadium' => 'Selhurst Park',
                 'goalscorer' => 'Peter Simpson',
-                'goalscorer_total' => 165
+                'goalscorer_total' => 165,
+                'history_ptbr' => 'O Crystal Palace Football Club, fundado em 1905, possui uma história rica e complexa, frequentemente oscilando entre as duas principais divisões do futebol inglês. Conhecidos como "The Eagles", eles jogam em Selhurst Park. O período mais famoso do clube foi sob o comando de Steve Coppell no final dos anos 1980 e início dos anos 1990, quando conquistaram a promoção para a Primeira Divisão e chegaram à final da FA Cup em 1990. Após várias dificuldades financeiras e diversos rebaixamentos e promoções, o Palace se restabeleceu firmemente na Premier League em 2013, solidificando sua posição como um time consistente da primeira divisão. A recente vitória na FA Cup em 2025 marcou seu primeiro grande troféu, adicionando um capítulo significativo à sua história.'
             ],
             [
                 'id_team' => 8,
@@ -75,7 +82,8 @@ class biographs extends Seeder
                 'foundation' => '1878',
                 'stadium' => 'Bramley-Moore Dock Stadium', // Assuming new stadium name is generally used now
                 'goalscorer' => 'Dixie Dean',
-                'goalscorer_total' => 383
+                'goalscorer_total' => 383,
+                'history_ptbr' => 'O Everton Football Club, fundado em 1878, é um dos clubes mais antigos e tradicionais do futebol inglês, sediado em Liverpool. Conhecidos como "The Toffees", foram um dos membros fundadores da Football League e passaram mais temporadas na primeira divisão do que qualquer outro clube. O Everton conquistou nove títulos da Liga, cinco FA Cups e uma Recopa Europeia. Com uma apaixonada base de fãs e uma rivalidade de longa data com o Liverpool no Merseyside Derby, o clube possui uma herança orgulhosa. A partir de 2025, eles estão iniciando um novo capítulo em seu novo estádio, com o objetivo de superar os recentes desafios financeiros e retornar aos escalões superiores do futebol inglês.'
             ],
             [
                 'id_team' => 9,
@@ -83,7 +91,8 @@ class biographs extends Seeder
                 'foundation' => '1879',
                 'stadium' => 'Craven Cottage',
                 'goalscorer' => 'Gordon Davies',
-                'goalscorer_total' => 178
+                'goalscorer_total' => 178,
+                'history_ptbr' => 'O Fulham Football Club, fundado em 1879, é o clube de futebol profissional mais antigo de Londres, sediado no oeste de Londres, às margens do Rio Tâmisa. Conhecidos como "The Cottagers", eles jogam em Craven Cottage, um dos campos mais históricos e pitorescos da Inglaterra. O Fulham passou por períodos tanto na primeira divisão quanto nas divisões inferiores, com sua era moderna de maior sucesso ocorrendo no início dos anos 2000, incluindo uma campanha até a final da UEFA Europa League em 2010. O clube tem oscilado consistentemente entre a Premier League e a Championship nos últimos anos, demonstrando resiliência e um compromisso com o futebol ofensivo. Com os desenvolvimentos contínuos do estádio, o Fulham visa consolidar sua posição na primeira divisão.'
             ],
             [
                 'id_team' => 10,
@@ -91,7 +100,8 @@ class biographs extends Seeder
                 'foundation' => '1878',
                 'stadium' => 'Portman Road',
                 'goalscorer' => 'Ray Crawford',
-                'goalscorer_total' => 171
+                'goalscorer_total' => 171,
+                'history_ptbr' => 'O Ipswich Town Football Club, fundado em 1878, possui uma rica história, particularmente sob os lendários treinadores Sir Alf Ramsey e Sir Bobby Robson. O clube conquistou o título da Primeira Divisão em 1962 e a FA Cup em 1978. Seu maior triunfo europeu veio em 1981, quando levantou a Copa da UEFA. Após períodos de declínio, o Ipswich tem se reconstruído, garantindo promoções consecutivas para alcançar a Premier League recentemente, apenas para enfrentar o rebaixamento novamente em 2025. Com sede em Portman Road, o clube mantém uma forte presença na comunidade com uma base de fãs dedicada, visando recuperar o status de Premier League e restabelecer-se como uma força no futebol inglês.'
             ],
             [
                 'id_team' => 11,
@@ -99,7 +109,8 @@ class biographs extends Seeder
                 'foundation' => '1884',
                 'stadium' => 'King Power Stadium',
                 'goalscorer' => 'Arthur Chandler',
-                'goalscorer_total' => 273
+                'goalscorer_total' => 273,
+                'history_ptbr' => 'O Leicester City Football Club, fundado em 1884 como Leicester Fosse, tornou-se Leicester City em 1919. Com sede no King Power Stadium, o clube alcançou uma das maiores zebras da história do futebol ao vencer o título da Premier League em 2016, desafiando odds de 5000/1. Este triunfo histórico foi seguido por sua primeira vitória na FA Cup em 2021. Os Foxes experimentaram batalhas por promoção e rebaixamento, mas seu título da Premier League cimentou seu lugar no folclore do futebol. A partir de 2025, o clube enfrenta desafios, incluindo possíveis sanções de fair play financeiro, mas permanece comprometido em competir no mais alto nível e construir sobre seus sucessos recentes.'
             ],
             [
                 'id_team' => 12,
@@ -107,7 +118,8 @@ class biographs extends Seeder
                 'foundation' => '1892',
                 'stadium' => 'Anfield',
                 'goalscorer' => 'Ian Rush',
-                'goalscorer_total' => 346
+                'goalscorer_total' => 346,
+                'history_ptbr' => 'O Liverpool Football Club, fundado em 1892, é um dos clubes mais bem-sucedidos do futebol mundial, com sede em Anfield. Conhecido por seu apaixonado hino "You\'ll Never Walk Alone" e pela era da "Boot Room", o Liverpool conquistou 19 títulos da Liga, um recorde de 8 FA Cups, um recorde de 10 Copas da Liga e seis títulos da UEFA Champions League, mais do que qualquer outro clube inglês. Sua história é marcada por períodos de domínio, rivalidades ferozes como o Merseyside Derby e noites europeias inesquecíveis. Sob nova gestão em 2025, após vencer a Premier League em 2024/25, o clube continua sua busca por troféus, visando sustentar sua posição como um gigante do futebol global.'
             ],
             [
                 'id_team' => 13,
@@ -115,7 +127,8 @@ class biographs extends Seeder
                 'foundation' => '1885',
                 'stadium' => 'Kenilworth Road',
                 'goalscorer' => 'Joe Payne',
-                'goalscorer_total' => 143
+                'goalscorer_total' => 143,
+                'history_ptbr' => 'O Luton Town Football Club, fundado em 1885, tem uma história marcada por altos e baixos dramáticos, incluindo um período na primeira divisão e a conquista da Copa da Liga em 1988. De forma única, eles passaram três décadas fora das quatro principais divisões do futebol inglês, chegando a cair para a liga não-profissional, antes de um ressurgimento incrível que os viu conquistar três promoções em cinco temporadas para chegar à Premier League em 2023. Após rebaixamentos consecutivos, eles se encontram na League One em 2025. Jogando em sua casa tradicional, Kenilworth Road, o Luton Town incorpora resiliência e espírito de luta, sempre se esforçando para subir novamente na pirâmide do futebol.'
             ],
             [
                 'id_team' => 14,
@@ -123,7 +136,8 @@ class biographs extends Seeder
                 'foundation' => '1880',
                 'stadium' => 'Etihad Stadium',
                 'goalscorer' => 'Sergio Agüero',
-                'goalscorer_total' => 260
+                'goalscorer_total' => 260,
+                'history_ptbr' => 'O Manchester City Football Club, fundado em 1880 como St. Mark\'s (West Gorton), tornou-se Manchester City em 1894. Após períodos de sucesso moderado e vários rebaixamentos, incluindo para a terceira divisão, o clube experimentou uma transformação dramática após a aquisição em 2008 pelo Abu Dhabi United Group. Isso inaugurou uma era de sucesso sem precedentes, com o City conquistando inúmeros títulos da Premier League, FA Cups, Copas da Liga e sua primeira UEFA Champions League em 2023. Com sede no Etihad Stadium, eles são conhecidos por seu futebol dominante e de posse de bola sob o comando de Pep Guardiola. Apesar de uma temporada de "transição" em 2024/25, o City continua sendo uma força formidável com o objetivo de recuperar a supremacia doméstica e europeia.'
             ],
             [
                 'id_team' => 15,
@@ -131,7 +145,8 @@ class biographs extends Seeder
                 'foundation' => '1878',
                 'stadium' => 'Old Trafford',
                 'goalscorer' => 'Wayne Rooney',
-                'goalscorer_total' => 253
+                'goalscorer_total' => 253,
+                'history_ptbr' => 'O Manchester United Football Club, fundado como Newton Heath LYR Football Club em 1878, mudou seu nome para Manchester United em 1902. Com sede em Old Trafford, é um dos clubes mais famosos e bem-sucedidos do futebol mundial. Sob Sir Matt Busby e, particularmente, Sir Alex Ferguson, o United alcançou um sucesso doméstico e europeu incomparável, incluindo 20 títulos da Liga, 12 FA Cups, 6 Copas da Liga e 3 títulos da UEFA Champions League. Conhecido por seu futebol ofensivo e jogadores icônicos, o clube enfrentou desafios significativos em 2024/25, perdendo a classificação europeia. Sob nova gestão, o United está determinado a reconstruir, voltar às suas vitórias e competir por grandes títulos novamente.'
             ],
             [
                 'id_team' => 16,
@@ -139,7 +154,8 @@ class biographs extends Seeder
                 'foundation' => '1892',
                 'stadium' => 'St James\' Park',
                 'goalscorer' => 'Alan Shearer',
-                'goalscorer_total' => 206
+                'goalscorer_total' => 206,
+                'history_ptbr' => 'O Newcastle United Football Club, fundado em 1892 pela fusão de dois clubes locais, é um clube proeminente no futebol inglês, com sede em St James\' Park. Conhecidos como "The Magpies", eles têm uma base de fãs apaixonada e leal. O clube desfrutou de sucesso significativo no início do século XX, vencendo quatro títulos da Liga e seis FA Cups. Após um longo período sem grandes troféus, o clube viu uma ambição renovada após uma mudança de propriedade, visando desafiar no topo da Premier League e em competições europeias. O Newcastle United é reconhecido por sua rica herança futebolística e pela atmosfera única de seu estádio.'
             ],
             [
                 'id_team' => 17,
@@ -147,7 +163,8 @@ class biographs extends Seeder
                 'foundation' => '1865',
                 'stadium' => 'The City Ground',
                 'goalscorer' => 'Arthur Capes', // Based on most sources, for official competitive goals
-                'goalscorer_total' => 104 // Total competitive goals
+                'goalscorer_total' => 104, // Total competitive goals
+                'history_ptbr' => 'O Nottingham Forest Football Club, fundado em 1865, é um dos clubes mais antigos e historicamente significativos da Inglaterra. Com sede no City Ground, seu período mais famoso foi sob o comando de Brian Clough no final dos anos 1970, quando eles notavelmente venceram o título da Primeira Divisão em 1978 e duas Copas Europeias consecutivas em 1979 e 1980. Após décadas fora da Premier League, o Forest conquistou a promoção de volta à primeira divisão em 2022. O clube enfrentou desafios desde o retorno à Premier League, muitas vezes lutando pela sobrevivência. Com um legado orgulhoso, o Forest visa consolidar seu status na Premier League e construir um futuro mais estável e bem-sucedido.'
             ],
             [
                 'id_team' => 18,
@@ -155,7 +172,8 @@ class biographs extends Seeder
                 'foundation' => '1885',
                 'stadium' => 'St Mary\'s Stadium',
                 'goalscorer' => 'Mick Channon',
-                'goalscorer_total' => 185
+                'goalscorer_total' => 185,
+                'history_ptbr' => 'O Southampton Football Club, fundado em 1885 como St. Mary\'s Y.M.A., tornou-se Southampton F.C. em 1897. Conhecidos como "The Saints", eles jogam no St Mary\'s Stadium. A conquista mais significativa do clube é a vitória na FA Cup em 1976. O Southampton tem a reputação de desenvolver jovens talentos através de sua aclamada academia, que produziu inúmeros jogadores internacionais pela Inglaterra. O clube frequentemente oscilou entre a Premier League e a Championship, demonstrando um espírito resiliente. A partir de 2025, tendo recentemente conquistado a promoção de volta à Premier League, o Southampton visa se estabelecer firmemente na primeira divisão e continuar sua tradição de futebol atraente e desenvolvimento de jogadores.'
             ],
             [
                 'id_team' => 19,
@@ -163,7 +181,8 @@ class biographs extends Seeder
                 'foundation' => '1882',
                 'stadium' => 'Tottenham Hotspur Stadium',
                 'goalscorer' => 'Harry Kane',
-                'goalscorer_total' => 280
+                'goalscorer_total' => 280,
+                'history_ptbr' => 'O Tottenham Hotspur Football Club, fundado em 1882, é um dos clubes mais históricos da Inglaterra, com sede no Norte de Londres. Conhecidos como "Spurs", eles jogam no moderno Tottenham Hotspur Stadium. O clube foi o primeiro time britânico a ganhar um troféu europeu (a Recopa Europeia em 1963) e conquistou a primeira "Dobradinha" da Liga e da FA Cup no século XX (1961). Os Spurs ganharam dois títulos da Liga, oito FA Cups, quatro Copas da Liga e duas Copas da UEFA. Com uma reputação de futebol atraente e ofensivo e uma rivalidade acirrada com o Arsenal, o Tottenham busca consistentemente disputar grandes títulos e solidificar sua posição entre os clubes de elite da Europa.'
             ],
             [
                 'id_team' => 20,
@@ -171,7 +190,8 @@ class biographs extends Seeder
                 'foundation' => '1900',
                 'stadium' => 'London Stadium',
                 'goalscorer' => 'Vic Watson',
-                'goalscorer_total' => 326
+                'goalscorer_total' => 326,
+                'history_ptbr' => 'O West Ham United Football Club, fundado em 1900 como Thames Ironworks F.C., tornou-se West Ham United em 1900. Com sede no leste de Londres, conhecidos como "The Hammers", eles jogaram em Upton Park por mais de um século antes de se mudarem para o London Stadium em 2016. O clube conquistou três FA Cups e a Recopa Europeia em 1965. Reconhecido por sua "Academy of Football" e suas cores distintivas grená e azul, o West Ham possui uma forte herança da classe trabalhadora e uma apaixonada base de fãs. Após vencer a UEFA Europa Conference League em 2023, o clube visa competir consistentemente pela qualificação europeia e estabelecer-se como uma força formidável na Premier League.'
             ],
             [
                 'id_team' => 21,
@@ -179,7 +199,8 @@ class biographs extends Seeder
                 'foundation' => '1877',
                 'stadium' => 'Molineux Stadium',
                 'goalscorer' => 'Steve Bull',
-                'goalscorer_total' => 306
+                'goalscorer_total' => 306,
+                'history_ptbr' => 'O Wolverhampton Wanderers Football Club, fundado em 1877, é um clube histórico com sede no Molineux Stadium. Conhecidos como "Wolves", eles foram um dos membros fundadores da Football League. Os Wolves desfrutaram de sucesso significativo na década de 1950, vencendo três títulos da Primeira Divisão e duas FA Cups, e foram pioneiros em competições de clubes europeus. Após períodos nas divisões inferiores, o clube retornou à Premier League e se estabeleceu como um time resiliente e competitivo na primeira divisão. Com uma forte identidade e apoio apaixonado, os Wolves visam disputar a qualificação europeia e construir um futuro sustentável no mais alto nível do futebol inglês.'
             ]
         ]);
     }

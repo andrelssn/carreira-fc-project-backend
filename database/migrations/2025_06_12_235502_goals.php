@@ -21,6 +21,9 @@ return new class extends Migration
                 ->string('goal')
                 ->nullable(false);
             $table
+                ->string('goal_ptbr')
+                ->nullable(false);
+            $table
                 ->enum('goal_level', [1, 2, 3, 4, 5])
                 ->nullable(false);
 
@@ -28,7 +31,7 @@ return new class extends Migration
             $table
                 ->foreign('id_team')
                 ->references('id')
-                ->on('teams')
+                ->on('teams_fc25')
                 ->nullable(false);
         });
     }

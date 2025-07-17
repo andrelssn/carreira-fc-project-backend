@@ -4,14 +4,14 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class teams extends Seeder
+class teams_fc25 extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('teams')->insert([
+        DB::table('teams_fc25')->insert([
                 // Premier League (id_league = 1)
                 ['name'=>'Arsenal','city'=>'London','country'=>'England','id_league'=>1,'size'=>5,'stadium'=>'Emirates Stadium'],
                 ['name'=>'Aston Villa','city'=>'Birmingham','country'=>'England','id_league'=>1,'size'=>4,'stadium'=>'Villa Park'],
