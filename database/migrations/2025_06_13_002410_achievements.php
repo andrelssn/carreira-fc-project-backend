@@ -26,7 +26,7 @@ return new class extends Migration
             $table
                 ->foreign('id_team')
                 ->references('id')
-                ->on('teams')
+                ->on('teams_fc25')
                 ->nullable(false);
         });
     }

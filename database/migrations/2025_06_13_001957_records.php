@@ -21,9 +21,12 @@ return new class extends Migration
                 ->string('name')
                 ->nullable(true);
             $table
+                ->string('name_ptbr')
+                ->nullable(true);
+            $table
                 ->foreign('id_team')
                 ->references('id')
-                ->on('teams')
+                ->on('teams_fc25')
                 ->nullable(false);
         });
     }

@@ -5,9 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Teams extends Model
+class Teams_fc25 extends Model
 {
     use HasFactory;
+
+    protected $table = 'teams_fc25';
 
     /**
      * The attributes that are mass assignable.
