@@ -1,6 +1,12 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/laravel/compare/v12.0.6...12.x)
+## [Unreleased](https://github.com/laravel/laravel/compare/v1.1.0...main)
+
+## [v1.1.0](https://github.com/laravel/laravel/compare/v12.0.6...v1.1.0) - 2025-07-28
+
+### Notes
+
+- *Added all main leagues and teams on migrations*
 
 ## [v12.0.6](https://github.com/laravel/laravel/compare/v12.0.5...v12.0.6) - 2025-04-08
 
