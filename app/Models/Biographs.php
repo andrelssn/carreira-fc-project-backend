@@ -17,6 +17,7 @@ class Biographs extends Model
     protected $fillable = [
         'id_team',
         'history',
+        'history_ptbr',
         'foundation',
         'stadium',
         'goalscorer',

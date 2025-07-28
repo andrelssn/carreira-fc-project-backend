@@ -26,6 +26,7 @@ class TeamsResource extends JsonResource
             "Stadium"          => $this->stadium,
             "Size"             => $this->size,
             "History"          => $biograph[0]->history,
+            "History_PTBR"     => $biograph[0]->history_ptbr,
             "Foundation"       => $biograph[0]->foundation,
             "Goalscorer"       => $biograph[0]->goalscorer,
             "Goalscorer_Total" => $biograph[0]->goalscorer_total,
