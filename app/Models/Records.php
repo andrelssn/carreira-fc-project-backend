@@ -17,6 +17,7 @@ class Records extends Model
     protected $fillable = [
         'id_team',
         'name',
+        'name_ptbr',
     ];
 
     /**

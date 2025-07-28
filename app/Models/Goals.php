@@ -17,6 +17,7 @@ class Goals extends Model
     protected $fillable = [
         'id_team',
         'goal',
+        'goal_ptbr',
         'goal_level',
     ];
 
